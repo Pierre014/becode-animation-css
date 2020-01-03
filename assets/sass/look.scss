@@ -1,14 +1,15 @@
 //it's the beginning
 body {
     width: 350px;
-    overflow-X: hidden;
-    margin:auto
+    margin:auto;
+    box-shadow: 20px 20px 50px grey;
 }
 img{
     width: 350px;
     height: 250px;
     
 }
+
 button{  
     background-color: rgba(235, 52, 52, 0.925);
     color: white;
@@ -21,7 +22,7 @@ button{
     margin: 0;
 }
 section{
-    
+    height: 200px;
     h1{
         color:red;
         text-transform: uppercase;
@@ -44,40 +45,39 @@ section{
     left: 70%;
     z-index: 1000;
 }
-article{
-    display: none;
-    margin: 0;
-}
 footer{
+    width: 350px;
+    background-color: white;
     position: absolute;
     top:515.75px;
     bottom: -200.75px;
+    z-index: 1000;
 }
 .reseau{
     color: grey;
 }
-//animation
-header{
-    overflow-X: hidden;
+section p{
+    padding-top: 20px;
+    overflow: hidden;
 }
+//animation
 body:hover>header{
     opacity: 50%;
     transition-duration: 2s;
-    img{
-        width: 110%;
-        transition-duration: 2s;
-    }
-    
 }
 body:hover>section{
     background-color: white;
-    transform: translateY(-60px);
+    transform: translateY(-100px);
     transition-duration: 2s;
+    overflow: visible;
 
     article{
 
-        display: contents;
         transition-duration: 2s;
         
     }
+}
+body:hover{
+    box-shadow: 20px 20px 50px black;
+    transition-duration: 2s;
 }
