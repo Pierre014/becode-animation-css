@@ -1,0 +1,83 @@
+//it's the beginning
+body {
+    width: 350px;
+    overflow-X: hidden;
+    margin:auto
+}
+img{
+    width: 350px;
+    height: 250px;
+    
+}
+button{  
+    background-color: rgba(235, 52, 52, 0.925);
+    color: white;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    position: relative;
+    left:0;
+    top: -20px;
+    margin: 0;
+}
+section{
+    
+    h1{
+        color:red;
+        text-transform: uppercase;
+    }
+    h2{
+        color: red;
+    }
+}
+.date{
+    border: 1px solid rgb(235, 52, 52);
+    background-color: rgb(235, 52, 52);
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    color: white;
+    text-align: center;
+    position: relative;
+    line-height: 60px;
+    top: 100px;
+    left: 70%;
+    z-index: 1000;
+}
+article{
+    display: none;
+    margin: 0;
+}
+footer{
+    position: absolute;
+    top:515.75px;
+    bottom: -200.75px;
+}
+.reseau{
+    color: grey;
+}
+//animation
+header{
+    overflow-X: hidden;
+}
+body:hover>header{
+    opacity: 50%;
+    transition-duration: 2s;
+    img{
+        width: 110%;
+        transition-duration: 2s;
+    }
+    
+}
+body:hover>section{
+    background-color: white;
+    transform: translateY(-60px);
+    transition-duration: 2s;
+
+    article{
+
+        display: contents;
+        transition-duration: 2s;
+        
+    }
+}
